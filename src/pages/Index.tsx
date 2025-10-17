@@ -28,14 +28,13 @@ const Index = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative overflow-hidden border-b">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-accent/5" />
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 relative">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+      <section className="border-b">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
+          <div className="max-w-5xl mx-auto text-center">
+            <h1 className="text-5xl md:text-7xl font-light mb-8 tracking-tight text-foreground">
               Machine Learning & Control Systems Laboratory
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-foreground/70 mb-8 max-w-4xl mx-auto leading-relaxed">
               Advancing the intersection of artificial intelligence and control theory to create intelligent, adaptive systems
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
@@ -57,10 +56,10 @@ const Index = () => {
 
       {/* Research Areas */}
       <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Research Focus</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-light mb-4 tracking-tight">Research Focus</h2>
+            <p className="text-lg text-foreground/60 max-w-3xl mx-auto leading-relaxed">
               Our lab explores cutting-edge approaches at the convergence of machine learning and control systems
             </p>
           </div>
@@ -69,16 +68,16 @@ const Index = () => {
             {researchAreas.map((area, index) => (
               <Card 
                 key={index}
-                className="border-border hover:shadow-[var(--shadow-card-hover)] transition-all duration-300 hover:-translate-y-1"
+                className="border-border transition-shadow duration-200"
               >
                 <CardHeader>
-                  <div className="mb-4 p-3 rounded-lg bg-gradient-to-br from-primary/10 to-accent/10 w-fit">
-                    <area.icon className="h-8 w-8 text-accent" />
+                  <div className="mb-4 p-3 rounded-lg bg-muted w-fit">
+                    <area.icon className="h-8 w-8 text-foreground" />
                   </div>
-                  <CardTitle className="text-xl">{area.title}</CardTitle>
+                  <CardTitle className="text-xl font-normal">{area.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-foreground/70">
+                  <CardDescription className="text-foreground/60 leading-relaxed">
                     {area.description}
                   </CardDescription>
                 </CardContent>
@@ -89,21 +88,21 @@ const Index = () => {
       </section>
 
       {/* Recent Highlights */}
-      <section className="bg-muted/50 border-y py-16 md:py-24">
+      <section className="bg-muted/30 border-y py-16 md:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Recent Highlights</h2>
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-light mb-4 tracking-tight">Recent Highlights</h2>
             </div>
             
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="border-border">
                 <CardHeader>
-                  <CardTitle>New Paper Accepted at ACC 2024</CardTitle>
+                  <CardTitle className="font-normal">New Paper Accepted at ACC 2024</CardTitle>
                   <CardDescription>March 2024</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-foreground/80">
+                  <p className="text-foreground/60 leading-relaxed">
                     Our work on neural network-based state estimation with stability guarantees has been accepted for presentation at the American Control Conference.
                   </p>
                 </CardContent>
@@ -111,11 +110,11 @@ const Index = () => {
               
               <Card className="border-border">
                 <CardHeader>
-                  <CardTitle>Open Source Release</CardTitle>
+                  <CardTitle className="font-normal">Open Source Release</CardTitle>
                   <CardDescription>February 2024</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-foreground/80">
+                  <p className="text-foreground/60 leading-relaxed">
                     Released our adaptive control toolkit with PyTorch integration, providing state-of-the-art implementations for the research community.
                   </p>
                 </CardContent>
