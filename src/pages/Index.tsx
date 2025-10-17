@@ -28,11 +28,11 @@ const Index = () => {
       {/* Hero Section */}
       <section>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
-          <div className="max-w-5xl mx-auto text-center">
-            <h1 className="text-5xl md:text-7xl font-light mb-8 tracking-tight text-foreground">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-6xl md:text-8xl font-light mb-12 uppercase tracking-[0.2em] text-muted-foreground/40">
               Machine Learning & Control Systems Laboratory
             </h1>
-            <p className="text-lg md:text-xl text-foreground/70 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-base md:text-lg text-foreground max-w-2xl mx-auto leading-relaxed">
               Advancing the intersection of artificial intelligence and control theory to create intelligent, adaptive systems
             </p>
           </div>
