@@ -1,8 +1,6 @@
 import Header from "@/components/Header";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowRight, Brain, Cpu, Network } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Brain, Cpu, Network } from "lucide-react";
 
 const Index = () => {
   const researchAreas = [
@@ -28,28 +26,15 @@ const Index = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="border-b">
+      <section>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
           <div className="max-w-5xl mx-auto text-center">
             <h1 className="text-5xl md:text-7xl font-light mb-8 tracking-tight text-foreground">
               Machine Learning & Control Systems Laboratory
             </h1>
-            <p className="text-lg md:text-xl text-foreground/70 mb-8 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-foreground/70 max-w-4xl mx-auto leading-relaxed">
               Advancing the intersection of artificial intelligence and control theory to create intelligent, adaptive systems
             </p>
-            <div className="flex flex-wrap gap-4 justify-center">
-              <Link to="/projects">
-                <Button size="lg" className="gap-2">
-                  Explore Our Research
-                  <ArrowRight className="h-4 w-4" />
-                </Button>
-              </Link>
-              <Link to="/publications">
-                <Button size="lg" variant="outline">
-                  View Publications
-                </Button>
-              </Link>
-            </div>
           </div>
         </div>
       </section>
@@ -88,7 +73,7 @@ const Index = () => {
       </section>
 
       {/* Recent Highlights */}
-      <section className="bg-muted/30 border-y py-16 md:py-24">
+      <section className="bg-muted/30 py-16 md:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-16">
@@ -125,7 +110,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="border-t py-8">
+      <footer className="py-8">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto text-center text-sm text-muted-foreground">
             <p>ML & Control Systems Laboratory • Department of Engineering • University</p>
