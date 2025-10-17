@@ -1,21 +1,17 @@
 import Header from "@/components/Header";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Brain, Cpu, Network } from "lucide-react";
 
 const Index = () => {
   const researchAreas = [
     {
-      icon: Brain,
       title: "Machine Learning",
       description: "Deep learning, neural networks, and reinforcement learning techniques for intelligent control systems."
     },
     {
-      icon: Cpu,
       title: "Adaptive Control",
       description: "Real-time adaptive algorithms that learn and adjust to system uncertainties and changing dynamics."
     },
     {
-      icon: Network,
       title: "System Identification",
       description: "Data-driven methods for discovering system models from experimental observations."
     }
@@ -30,7 +26,7 @@ const Index = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-6xl md:text-8xl font-light mb-12 uppercase tracking-[0.2em] text-muted-foreground/40">
-              Machine Learning & Control Systems Laboratory
+              Sibai Lab
             </h1>
             <p className="text-base md:text-lg text-foreground max-w-2xl mx-auto leading-relaxed">
               Advancing the intersection of artificial intelligence and control theory to create intelligent, adaptive systems
@@ -56,9 +52,6 @@ const Index = () => {
                 className="border-border transition-shadow duration-200"
               >
                 <CardHeader>
-                  <div className="mb-4 p-3 rounded-lg bg-muted w-fit">
-                    <area.icon className="h-8 w-8 text-foreground" />
-                  </div>
                   <CardTitle className="text-xl font-normal">{area.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -113,7 +106,7 @@ const Index = () => {
       <footer className="py-8">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto text-center text-sm text-muted-foreground">
-            <p>ML & Control Systems Laboratory • Department of Engineering • University</p>
+            <p>Sibai Lab • Department of Engineering • University</p>
           </div>
         </div>
       </footer>

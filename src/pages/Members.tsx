@@ -1,7 +1,6 @@
 import Header from "@/components/Header";
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
-import { Mail, Linkedin, GraduationCap } from "lucide-react";
 
 const Members = () => {
   const facultyMembers = [
@@ -67,9 +66,8 @@ const Members = () => {
             {member.email && (
               <a
                 href={`mailto:${member.email}`}
-                className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-accent transition-colors"
+                className="text-sm text-muted-foreground hover:text-accent transition-colors"
               >
-                <Mail className="h-3 w-3" />
                 {member.email}
               </a>
             )}
@@ -94,8 +92,7 @@ const Members = () => {
 
           <div className="space-y-12">
             <section>
-              <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
-                <GraduationCap className="h-6 w-6 text-accent" />
+              <h2 className="text-2xl font-bold mb-6">
                 Faculty
               </h2>
               <div className="grid gap-6">

@@ -1,6 +1,5 @@
 import Header from "@/components/Header";
 import { Card, CardContent } from "@/components/ui/card";
-import { ExternalLink } from "lucide-react";
 
 const Publications = () => {
   const publications = [
@@ -81,10 +80,9 @@ const Publications = () => {
                       <a
                         key={linkIndex}
                         href={link.url}
-                        className="inline-flex items-center gap-1 text-sm text-accent hover:underline"
+                        className="text-sm text-accent hover:underline"
                       >
                         {link.label}
-                        <ExternalLink className="h-3 w-3" />
                       </a>
                     ))}
                   </div>
